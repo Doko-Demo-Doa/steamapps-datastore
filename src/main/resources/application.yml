@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: dev
+  data:
+    rest:
+      # Only repositories annotated with @(Repository)RestResource are exposed, unless their exported flag is set to false.
+      detection-strategy: ANNOTATED
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc.non_contextual_creation: true
+    show-sql: true
+
+api_version: v1
+api_prefix_path: ${api_version}/api/
