@@ -18,8 +18,7 @@ import java.util.List;
 @Slf4j
 @RequestMapping("/apps")
 public class SteamAppResource {
-
-    private SteamAppService service;
+    private final SteamAppService service;
 
     public SteamAppResource(SteamAppService service) {
         this.service = service;
@@ -41,7 +40,7 @@ public class SteamAppResource {
                     .get("app");
 
             if (nodes.isArray()) {
-                List<SteamApp> appz = new ArrayList<>();
+                List<SteamApp> apps = new ArrayList<>();
                 for (JsonNode node : nodes) {
                     SteamApp singleApp = new SteamApp();
 
@@ -50,10 +49,10 @@ public class SteamAppResource {
                     singleApp.setAppId(appId);
                     singleApp.setName(appName);
 
-                    appz.add(singleApp);
+                    apps.add(singleApp);
                 }
 
-                service.save(appz);
+                service.save(apps);
                 return "Completed";
             }
 
