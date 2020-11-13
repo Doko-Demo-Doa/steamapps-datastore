@@ -42,3 +42,6 @@ secrets.yml
 .gradletasknamecache
 .sts4-cache
 v0001.json
+*.env
+application-dev.yml
+docs/

@@ -4,7 +4,7 @@ spring:
       ddl-auto: create
   datasource:
     url: jdbc:postgresql://localhost:5432/steamapps
-    username: doko
+    username: postgres
     password: ''
     initialization-mode: always
 
