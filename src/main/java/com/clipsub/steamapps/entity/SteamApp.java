@@ -8,7 +8,8 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
-// Source: http://api.steampowered.com/ISteamApps/GetAppList/v0001/
+// Source: https://api.steampowered.com/ISteamApps/GetAppList/v0001/
+// Source V2: https://api.steampowered.com/ISteamApps/GetAppList/v2/
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
