@@ -10,6 +10,8 @@ import java.io.Serializable;
 
 // Source: https://api.steampowered.com/ISteamApps/GetAppList/v0001/
 // Source V2: https://api.steampowered.com/ISteamApps/GetAppList/v2/
+// For individual package: https://store.steampowered.com/api/packagedetails?packageids=32848
+// Interesting things: https://wiki.teamfortress.com/wiki/User:RJackson/StorefrontAPI
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

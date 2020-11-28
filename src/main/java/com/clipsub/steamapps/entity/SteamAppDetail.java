@@ -10,6 +10,7 @@ import javax.persistence.*;
 
 /**
  * A Steam App can be a game, music, or DLC. Check the "type" field.
+ * https://store.steampowered.com/api/appdetails?appids=282900&l=japanese
  */
 @Data
 @AllArgsConstructor
@@ -21,7 +22,14 @@ public class SteamAppDetail {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @Column(name = "name")
     private String name;
+
+    private boolean isFree;
+
+    private String[] developers;
+
+    private String[] publishers;
 
     @Column(name = "type")
     private AppTypeEnum type;
