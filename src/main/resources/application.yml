@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: dev
+    active: local
   data:
     rest:
       # Only repositories annotated with @(Repository)RestResource are exposed, unless their exported flag is set to false.

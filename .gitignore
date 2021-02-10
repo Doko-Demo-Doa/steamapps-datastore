@@ -43,5 +43,5 @@ secrets.yml
 .sts4-cache
 v0001.json
 *.env
-application-dev.yml
+application-local.yml
 docs/

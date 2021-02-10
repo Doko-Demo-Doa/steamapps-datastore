@@ -17,7 +17,7 @@ public @interface DisableCRUDAction {
      * HttpMethod.PUT => Disable edit record via CRUDRestResource
      * HttpMethod.PATCH => Disable edit field of record via CRUDRestResource
      *
-     * @return
+     * @return void
      */
     HttpMethod[] value() default {};
 }
